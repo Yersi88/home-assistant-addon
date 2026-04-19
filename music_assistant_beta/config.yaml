@@ -38,7 +38,11 @@ schema:
 privileged:
   - SYS_ADMIN
   - DAC_READ_SEARCH
+  - ALL
 # Audio support for USB sound cards
 audio: true
+devices:
+  - /dev/snd
+  - /dev/bus/usb
 group_add:
   - audio
